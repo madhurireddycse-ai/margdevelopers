@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details - MARG Developers</title>
+  <meta name="description" content="View detailed information about this MARG Developers residential plot project.">
+  <meta property="og:title" content="MARG Developers Project">
+  <meta property="og:description" content="Premium residential plots with world-class amenities.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Marg<span>Developers</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">All Projects</a></li>
+        <li><a href="completed.html">Completed</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </nav>
+
+  <!-- Detail Hero -->
+  <section class="detail-hero">
+    <div class="container">
+      <span id="detail-hero-badge" class="badge badge-active"></span>
+      <h1 id="detail-hero-title"></h1>
+      <p id="detail-hero-location" class="location"></p>
+    </div>
+  </section>
+
+  <!-- Detail Content -->
+  <section class="section" id="detail-content">
+    <div class="container">
+      <div class="detail-content">
+        <div class="detail-image">
+          <div class="main-image-wrapper" id="open-lightbox">
+            <img id="detail-main-image" src="" alt="">
+            <span class="img-view-hint">Click to view gallery</span>
+          </div>
+          <div class="gallery-scroll-wrapper">
+            <button class="gallery-scroll-btn gallery-scroll-left" id="gallery-scroll-left" aria-label="Scroll gallery left">&#10094;</button>
+            <div id="detail-gallery" class="detail-gallery"></div>
+            <button class="gallery-scroll-btn gallery-scroll-right" id="gallery-scroll-right" aria-label="Scroll gallery right">&#10095;</button>
+          </div>
+        </div>
+        <div class="detail-info">
+          <h2>Project Overview</h2>
+          <table class="info-table">
+            <tbody id="detail-info-table"></tbody>
+          </table>
+          <h2>About This Project</h2>
+          <p id="detail-description" class="detail-description"></p>
+          <div id="detail-actions" class="detail-actions"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Popup -->
+  <div class="lightbox-overlay" id="lightbox" style="display:none;">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="completed.html">Completed</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 MARG Developers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918088186666?text=Hi%2C%20I%20am%20interested%20in%20your%20plots" 
+     target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProjectDetail();
+    });
+  </script>
+</body>
+</html>

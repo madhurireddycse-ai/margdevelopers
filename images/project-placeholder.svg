@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
+  <rect fill="#e8e8e0" width="800" height="500"/>
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" fill="#999" font-size="28" font-family="sans-serif">Project Photo</text>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#bbb" font-size="16" font-family="sans-serif">Replace with actual project image</text>
+</svg>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completed Projects - MARG Developers</title>
+  <meta name="description" content="View MARG Developers successfully completed residential plot projects. A track record of trust and quality delivery.">
+  <meta property="og:title" content="Completed Projects - MARG Developers">
+  <meta property="og:description" content="View MARG Developers successfully completed residential plot projects.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Marg<span>Developers</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">All Projects</a></li>
+        <li><a href="completed.html">Completed</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="padding: 50px 0;">
+    <div class="container">
+      <h1>Completed Projects ✅</h1>
+      <p>Our track record of successfully delivered projects</p>
+    </div>
+  </section>
+
+  <!-- Completed Projects -->
+  <section class="section">
+    <div class="container">
+      <div id="completed-projects" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="completed.html">Completed</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2026 MARG Developers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918088186666?text=Hi%2C%20I%20am%20interested%20in%20your%20plots" 
+     target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProjects('completed-projects', 'completed');
+    });
+  </script>
+</body>
+</html>
